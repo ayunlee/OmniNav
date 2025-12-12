@@ -134,7 +134,7 @@ wandb/
 benchmarks/
 eval_output/
 eval_outputs/
-transformers/
+#transformers/
 vlmeval/
 my_model/
 #/data
