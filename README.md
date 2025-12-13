@@ -43,6 +43,13 @@ cd habitat-baselines
 pip install -e .
 ```
 
+### 🎁 Model
+| Models                          |                       Download Link                                           |
+|---------------------------------|-------------------------------------------------------------------------------|
+| Visual-only for r2r, rx2 & ovon | [ModelScope](https://www.modelscope.ai/models/chongchongjj/OmniNav/)
+
+
+
 ### ⚡ Inference
 ● r2r & rxr
 ``` sh
