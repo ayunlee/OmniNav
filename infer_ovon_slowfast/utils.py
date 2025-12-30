@@ -9,7 +9,7 @@ from omegaconf import OmegaConf
 import datetime 
 import habitat_sim
 from frontier_utils import map_coors_to_pixel
-from common.embodied_utils.simulator import HabitatSimulator
+from simulator import HabitatSimulator
 def make_video(goals,start_position,path_finder,global_color_list, global_frontier_list,video_path,split,sr,scene_id,cur_episode,object_category,log_file_path,global_state_list,top_down_map,sim):
     all_view_points = [
         vp["agent_state"]["position"]
