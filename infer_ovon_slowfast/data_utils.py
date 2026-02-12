@@ -26,7 +26,6 @@ from torch.utils.data import default_collate
 from merge_utils import RepresentationManager
 import time
 
-from model.query3d_vle import Query3DVLE
 
 def timeit(func):
     def wrapper(*args, **kwargs):

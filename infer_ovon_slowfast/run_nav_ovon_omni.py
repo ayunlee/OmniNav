@@ -113,7 +113,7 @@ for split in split_list:
         bank=Bank(goto_sample_interval=1)
         color_past=None
         agent_past=None
-        while total_steps < 2000:
+        while total_steps < 4000:
             if goto_color_list:
                 bank.add(goto_color_list, goto_agent_state_list, data_type='goto')
                 goto_color_list,goto_agent_state_list = [], []
@@ -241,7 +241,7 @@ for split in split_list:
                     break
                 count = 0
 
-                while float(np.linalg.norm(np.array(agent.get_state().position) - np.array(target_position)))>0.1 and count < 60:
+                while float(np.linalg.norm(np.array(agent.get_state().position) - np.array(target_position)))>0.1 and count < 200:
                     count = count + 1
 
                     obervations,positions,rot = get_result_fast(omni_nav,

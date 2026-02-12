@@ -31,22 +31,16 @@ def parse_response(response_text):
     return None, False
 
 def process_vision(colorlist):
+    """处理消息中的图像和视频信息"""
     image_inputs = []
     video_inputs = []
-    for image in colorlist:  
+    
+    for image in colorlist: 
             image = Image.fromarray(image)
             image = image.resize((486,420))
-            width, height = image.size
-            resized_height, resized_width = smart_resize(
-                height,
-                width,
-                factor=14,
-                min_pixels=min_pixels,
-                max_pixels=max_pixels,
-            )
-            image = image.resize((resized_width, resized_height))
             image_inputs.append(image)
-
+                        
+    
     return image_inputs, video_inputs
 import numpy as np
 import quaternion
@@ -205,7 +199,7 @@ def get_result_fast(qwen, processor,bank,global_color_list,global_list,sim,agent
     REPRODUCIBLE_SEED = 42
 
     all_fwd_indices_before_start = [i for i, act in enumerate(global_color_list) if act[1] == 'goto']
-    if rot >50:
+    if rot >100:
         log_message('too many interrupt')
         return '000',global_list[-1],rot
     if check_small_position_change(

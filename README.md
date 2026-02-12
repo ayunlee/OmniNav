@@ -4,11 +4,10 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2509.25687-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.25687)
 
 ## 🔥 Latest News!!
-* December 11, 2025: We release the training code as well as the fast system (vision-only) inference code for the R2R, RxR, and OVON benchmarks.
+* February 12, 2026: We release the slow-fast collaboration system inference checkpoint for OVON benchmark.
 * December 30, 2025: We release the slow-fast collaboration system inference code for OVON benchmark.
+* December 11, 2025: We release the training code as well as the fast system (vision-only) inference code for the R2R, RxR, and OVON benchmarks.
 
-## Coming Soon
-* The slow-fast collaboration system inference checkpoint
 
 ## Quickstart
 ### 🧰 Installation
@@ -45,9 +44,10 @@ pip install -e .
 ```
 
 ### 🎁 Model
-| Models                          |                       Download Link                                           |
-|---------------------------------|-------------------------------------------------------------------------------|
-| Visual-only for r2r, rx2 & ovon | [ModelScope](https://www.modelscope.ai/models/chongchongjj/OmniNav/)
+| Models                                  |                       Download Link                                           |
+|-----------------------------------------|-------------------------------------------------------------------------------|
+| Visual-only for r2r, rx2 & ovon         | [ModelScope](https://www.modelscope.ai/models/chongchongjj/OmniNav/)
+| Slow-fast collaboration system for ovon | [ModelScope](https://www.modelscope.ai/models/chongchongjj/OmniNav_Slowfast/)
 
 
 
